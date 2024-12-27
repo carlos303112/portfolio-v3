@@ -1,0 +1,194 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Sección "Sobre mí" */
+#sobre-mi {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+    
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+}
+
+/* Estilo de la lista de proyectos */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo de cada tarjeta de proyecto */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el título */
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la descripción */
+.project-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Contenedor del video para que se ajuste al 100% del contenedor */
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3em;
+    }
+
+    .project-card p {
+        font-size: 0.95em;
+    }
+}
+
+
+/* Sección "Habilidades" */
+#habilidades {
+    padding: 60px 20px;
+    background-color: #e8f5e9;
+}
+
+.skills-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección "Contacto" */
+#contacto {
+    padding: 60px 20px;
+    background-color: #ede7f6;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
